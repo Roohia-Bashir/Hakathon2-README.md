@@ -13,7 +13,7 @@ function Cart() {
           <div className="inline-block w-16 h-16 bg-[url('/logo1.png')] mb-4" />
           <h1 className="text-4xl font-medium mb-4 font-poppins">Cart</h1>
           <div className="flex items-center justify-center gap-2 text-sm">
-            <a href="#" className="hover:underline">Home</a>
+            <a href="/#" className="hover:underline">Home</a>
             <span>
               <Image
                 src="/rightA.png"

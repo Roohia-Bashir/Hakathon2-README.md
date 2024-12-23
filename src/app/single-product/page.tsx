@@ -1,7 +1,7 @@
 import React from 'react'
 import Productdetails from '@/components/productdetails/Productdetails'
-import Relatedproducts from '@/components/relatedProduct/Relatedproducts'
-import Spmain from '@/components/shopmain/Shopmain'
+import Relatedproducts from '@/components/relatedProduct/RelatedProduct'
+import Spmain from '@/components/shopMainImage/Shopmainimage'
 import { ChevronRight } from 'lucide-react'
 
 function Singleproduct() {

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="w-full border-t border-black/[0.17] bg-white py-12 mt-[1px]">
@@ -19,18 +21,18 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-gray-500 font-poppins font-medium mb-4 md:mb-7">Links</h3>
             <nav className="flex flex-col space-y-4 md:space-y-6">
-              <a href="#" className="text-black font-poppins font-medium hover:text-gray-700">
+              <Link href="#" className="text-black font-poppins font-medium hover:text-gray-700">
                 Home
-              </a>
-              <a href="#" className="text-black font-poppins font-medium hover:text-gray-700">
+              </Link>
+              <Link href="/shop" className="text-black font-poppins font-medium hover:text-gray-700">
                 Shop
-              </a>
-              <a href="#" className="text-black font-poppins font-medium hover:text-gray-700">
-                About
-              </a>
-              <a href="#" className="text-black font-poppins font-medium hover:text-gray-700">
+              </Link>
+              <Link href="/blog" className="text-black font-poppins font-medium hover:text-gray-700">
+                Blog
+              </Link>
+              <Link href="/contact" className="text-black font-poppins font-medium hover:text-gray-700">
                 Contact
-              </a>
+              </Link>
             </nav>
           </div>
 

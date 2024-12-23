@@ -8,42 +8,38 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="relative w-full bg-white">
+    <nav className="relative w-full bg-white shadow-sm">
       {/* Main container for Navbar */}
-      <div className="max-w-[1286px] mx-auto px-4 flex items-center justify-between h-[41px] mt-[29px] ml-[54px]">
-        
+      <div className="max-w-[1286px] mx-auto px-4 flex items-center justify-between h-[70px] md:h-[80px]">
         {/* Logo Section */}
-        <div className="flex items-center gap-1">
-          <div className="w-[50px] h-[32px]">
-            <div className="w-full h-full" />
-          </div>
-          <h1 className="text-[34px] font-bold font-montserrat text-black flex items-center gap-4">
-            <div><Image src={'/logo.png'} alt={'Logo'} height={32} width={50}></Image></div>
+        <div className="flex items-center gap-3">
+          <Image src={'/logo.png'} alt={'Logo'} height={32} width={50} className="block" />
+          <h1 className="text-[24px] md:text-[34px] font-bold font-montserrat text-black">
             Furniro
           </h1>
         </div>
 
         {/* Navigation Links */}
         <div className="hidden sm:flex items-center gap-8">
-          <Link href="/" className="text-base font-medium font-poppins text-black hover:text-black/70 transition-colors">Home</Link>
-          <Link href="/shop" className="text-base font-medium font-poppins text-black hover:text-black/70 transition-colors">Shop</Link>
-          <Link href="/blog" className="text-base font-medium font-poppins text-black hover:text-black/70 transition-colors">Blog</Link>
-          <Link href="/contact" className="text-base font-medium font-poppins text-black hover:text-black/70 transition-colors">Contact</Link>
+          <Link href="/" className="text-sm md:text-base font-medium font-poppins text-black hover:text-black/70 transition-colors">Home</Link>
+          <Link href="/shop" className="text-sm md:text-base font-medium font-poppins text-black hover:text-black/70 transition-colors">Shop</Link>
+          <Link href="/blog" className="text-sm md:text-base font-medium font-poppins text-black hover:text-black/70 transition-colors">Blog</Link>
+          <Link href="/contact" className="text-sm md:text-base font-medium font-poppins text-black hover:text-black/70 transition-colors">Contact</Link>
         </div>
 
         {/* Icons Section */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 md:gap-6">
           <button aria-label="Account" className="p-2 hover:bg-black/5 rounded-full transition-colors">
-            <UserCircle className="w-6 h-6" />
+            <UserCircle className="w-5 h-5 md:w-6 md:h-6" />
           </button>
           <button aria-label="Search" className="p-2 hover:bg-black/5 rounded-full transition-colors">
-            <Search className="w-6 h-6" />
+            <Search className="w-5 h-5 md:w-6 md:h-6" />
           </button>
           <button aria-label="Wishlist" className="p-2 hover:bg-black/5 rounded-full transition-colors">
-            <Heart className="w-6 h-6" />
+            <Heart className="w-5 h-5 md:w-6 md:h-6" />
           </button>
           <button aria-label="Shopping Cart" className="p-2 hover:bg-black/5 rounded-full transition-colors">
-            <ShoppingCart className="w-6 h-6" />
+            <ShoppingCart className="w-5 h-5 md:w-6 md:h-6" />
           </button>
         </div>
       </div>
@@ -52,7 +48,7 @@ export default function Navbar() {
       <div className="sm:hidden flex items-center justify-between px-4 py-2">
         <button
           aria-label="Menu"
-          className="p-2"
+          className="p-2 bg-transparent"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <span className="block w-6 h-1 bg-black mb-1 transition-transform duration-300" />
