@@ -1,8 +1,8 @@
 import React from 'react'
-import Productdetails from '@/components/productdetails/Productdetails'
 import Relatedproducts from '@/components/relatedProduct/Relatedproducts'
-import Spmain from '@/components/shopMainImage/Shopmainimage'
 import { ChevronRight } from 'lucide-react'
+import ProductDetails from '@/components/productdetails/Productdetails'
+import Shopmainimage from '../../../Hakathon2-README.md/src/components/shopMainImage/Shopmainimage'
 
 function Singleproduct() {
   return (
@@ -33,10 +33,10 @@ function Singleproduct() {
       </div>
 
       {/* Main Product Section */}
-      <Spmain />
+      <Shopmainimage />
 
       {/* Product Details Section */}
-      <Productdetails />
+      <ProductDetails />
 
       {/* Related Products Section */}
       <Relatedproducts />

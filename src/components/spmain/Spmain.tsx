@@ -13,7 +13,7 @@ import { products } from "@/constant/pro1";
 
 
 
- function Spmain(props:{id: number}) {
+ function Spmain(props:{id:number}) {
 
   
   console.log("------------>",props)
