@@ -10,9 +10,6 @@ import { Label } from "@/components/ui/label";
 import { products } from "@/constant/pro1";
 
 
-
-
-
  function Spmain(props:{id:number}) {
 
   

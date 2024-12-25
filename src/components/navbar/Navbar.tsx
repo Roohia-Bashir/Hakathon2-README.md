@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Search, Heart, ShoppingCart, UserCircle } from 'lucide-react'
+import CartDropdown from '../cartDropDown'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,18 +30,16 @@ export default function Navbar() {
 
         {/* Icons Section */}
         <div className="flex items-center gap-4 md:gap-6">
-          <button aria-label="Account" className="p-2 hover:bg-black/5 rounded-full transition-colors">
+          <Link href="/" aria-label="Account" className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <UserCircle className="w-5 h-5 md:w-6 md:h-6" />
-          </button>
+          </Link>
           <button aria-label="Search" className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <Search className="w-5 h-5 md:w-6 md:h-6" />
           </button>
-          <button aria-label="Wishlist" className="p-2 hover:bg-black/5 rounded-full transition-colors">
+          <Link href="/" aria-label="Wishlist" className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <Heart className="w-5 h-5 md:w-6 md:h-6" />
-          </button>
-          <button aria-label="Shopping Cart" className="p-2 hover:bg-black/5 rounded-full transition-colors">
-            <ShoppingCart className="w-5 h-5 md:w-6 md:h-6" />
-          </button>
+          </Link>
+         <CartDropdown />
         </div>
       </div>
 

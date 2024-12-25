@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <div className="flex flex-col mb-[56.67px]">
-
       <main className="flex-1">
         {/* Hero section with background image */}
         <section
@@ -23,16 +23,16 @@ export default function Hero() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 elit tellus, luctus nec ullamcorper mattis.
               </p>
-              <Button
-                className="bg-[#B88E2F] hover:bg-[#A17B2A] text-white px-8 py-6"
-              >
-                BUY NOW
-              </Button>
+
+              <Link href="/shop">
+                <Button className="bg-[#B88E2F] hover:bg-[#A17B2A] text-white px-8 py-6">
+                  BUY NOW
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
       </main>
-      
     </div>
   );
 }

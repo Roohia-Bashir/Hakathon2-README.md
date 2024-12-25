@@ -87,7 +87,7 @@ export default function ProductGrid() {
                     </span>
                   )}
                 </div>
-                <Link href={`/shop/${index}`}>
+                <Link href={`/shop/${product.id}`}>
                 
                 <Button className="w-full md:w-auto">
                   <ShoppingCart className="mr-2 h-4 w-4" />

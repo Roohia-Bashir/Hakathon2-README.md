@@ -4,28 +4,29 @@ import Shopbottombar from '@/components/shopBottomBar/Shopbottombar'
 import { Input } from '@/components/ui/input'
 import { Trash } from 'lucide-react'
 
+import CartTotals from '@/components/cartTotals/CartTotals'
+
 function Cart() {
   return (
     <>
       {/* Banner Section */}
-      <div className="bg-[url('/blogMainImage.png')] bg-cover mb-10 bg-center py-16">
-        <div className="container text-center">
-          <div className="inline-block w-16 h-16 bg-[url('/logo1.png')] mb-4" />
-          <h1 className="text-4xl font-medium mb-4 font-poppins">Cart</h1>
-          <div className="flex items-center justify-center gap-2 text-sm">
-            <a href="/#" className="hover:underline">Home</a>
-            <span>
-              <Image
-                src="/rightA.png"
-                width={20}
-                height={20}
-                alt="arrow"
-              />
-            </span>
-            <span>Checkout</span>
-          </div>
-        </div>
-      </div>
+
+      <section className="bg-[url('/blogMainImage.png')] bg-cover bg-center py-12 md:py-16 mb-6">
+              <div className="container mx-auto px-4 text-center">
+                <div className="inline-block w-16 h-16 bg-[url('/logo1.png')] mb-4" />
+                <h1 className="text-3xl md:text-4xl font-medium mb-4">Cart</h1>
+                <div className="flex items-center justify-center gap-2 text-sm">
+                  <a href="#" className="hover:underline">
+                    Home
+                  </a>
+                  <span>
+                    <Image src={"/rightA.png"} width={20} height={20} alt="arrow" />
+                  </span>
+                  <span>Cart</span>
+                </div>
+              </div>
+            </section>
+     
 
       {/* Middle Section */}
       <div className="w-full flex flex-col lg:flex-row gap-8 px-6 md:px-12 lg:px-24 mb-16">
@@ -66,13 +67,9 @@ function Cart() {
 
         {/* Right Div - Image */}
         <div className="w-full lg:w-[393px]">
-          <Image
-            src="/cart1.png"
-            alt="Cart Image"
-            width={393}
-            height={390}
-            className="max-w-full"
-          />
+
+          <CartTotals/>
+         
         </div>
       </div>
 

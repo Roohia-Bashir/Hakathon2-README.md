@@ -1,6 +1,7 @@
 import { products } from '@/constant/pro1'
 import React from 'react'
 import { ProductCard } from '../productCard/productCard'
+import Link from "next/link"
 
 function OurProducts() {
   return (
@@ -21,9 +22,10 @@ function OurProducts() {
 
           {/* Show More Button */}
           <div className="mt-8 flex justify-center">
+            <Link href="/shop">
             <button className="border-2 border-[#B88E2F] px-8 py-2 text-[#B88E2F] hover:bg-[#B88E2F] hover:text-white transition-colors">
               Show More
-            </button>
+            </button></Link>
           </div>
         </div>
       </section>
